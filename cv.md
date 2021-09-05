@@ -12,7 +12,7 @@ HTML5, CSS3, Less, Sass, Styled-components, JavaScript, TypeScript, React, React
 
 ## Code Example:
 
-```
+```javascript
 const getFirstUniqueChar = (string) => {
     const hashTable = {};
 
