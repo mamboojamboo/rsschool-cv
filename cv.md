@@ -1,6 +1,6 @@
 # rsschool-cv
 
-## Personal Data
+## Personal Data:
 
 Address: Russia, Moscow  
 Phone: +7.915.229.3281  
@@ -9,6 +9,27 @@ Telegram: @afoninmv
 ## Stack:
 
 HTML5, CSS3, Less, Sass, Styled-components, JavaScript, TypeScript, React, React-Hooks, Redux
+
+## Code Example:
+
+```
+const getFirstUniqueChar = (string) => {
+    const hashTable = {};
+
+    for (let id = 0; id < string.length; id++) {
+        !hashTable[string[id]]
+            ? hashTable[string[id]] = 1
+            : hashTable[string[id]]++;
+    }
+
+    for (let id = 0; id < string.length; id++) {
+        const elem = string[id];
+        if (hashTable[elem] === 1) return id;
+    }
+
+    return -1;
+};
+```
 
 ## Work Experience:
 
