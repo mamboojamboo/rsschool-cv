@@ -10,40 +10,82 @@
 </head>
 
 <body>
-    <header>
-        <img src="" alt="Photo">
-        <h1>
-            Mikhail Afonin
-        </h1>
-        <aside>
-            <h3>Contacts</h3>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+    <header class="header">
+        <section>
+            <h4 class="header__title">resume</h4>
+            <h4 class="header__subtitle">frontend developer</h4>
+
+            <h1 class="header__applicant-name">
+                Afonin Mikhail
+            </h1>
+            <ul class="header__contacts-list">
+                <li class="header__contacts-list-item">Russia, Moscow</li>
+                <li class="header__contacts-list-item">+7.915.229.3281</li>
+                <li class="header__contacts-list-item">afoninmv</li>
             </ul>
-        </aside>
+        </section>
+
+        <img class="header__image" src="./img/applicant_photo.png" alt="Photo">
     </header>
     <main>
         <section>
             <h2>Stack</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Less</li>
+                <li>Sass</li>
+                <li>Styled-components</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>React-Hooks</li>
+                <li>Redux</li>
+            </ul>
 
         </section>
         <section>
             <h2>Code Example</h2>
-
+            <pre>
+                <code>
+                    const getFirstUniqueChar = (string) => {
+                        const hashTable = {};
+                    
+                        for (let id = 0; id < string.length; id++) {
+                            !hashTable[string[id]]
+                                ? hashTable[string[id]] = 1
+                                : hashTable[string[id]]++;
+                        }
+                    
+                        for (let id = 0; id < string.length; id++) {
+                            const elem = string[id];
+                            if (hashTable[elem] === 1) return id;
+                        }
+                    
+                        return -1;
+                    };
+                </code>
+            </pre>
         </section>
         <section>
             <h2>Work Experience</h2>
-
+            <ul>
+                <li>May 2021 - Current: Frontend developer, iTeco</li>
+                <li>Aug 2020 - May 2021: Frontend developer, StartUp</li>
+                <li>Feb 2020 - Jul 2020: Frontend developer, Megafon</li>
+                <li>Jan 2019 - Feb 2020: Frontend developer, Freelance</li>
+            </ul>
         </section>
         <section>
             <h2>Education</h2>
-            Education
+            <span>2010 - Russian State University of Trade and Economics / Management</span>
         </section>
         <section>
             <h2>Languages</h2>
-
+            <ul>
+                <li>English - Intermediate (B2)</li>
+                <li>German - Beginner (A1)</li>
+            </ul>
         </section>
     </main>
     <footer>
