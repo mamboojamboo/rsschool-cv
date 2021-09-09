@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="header__section">
+            <h4 class="header__title">resume</h4>
+
+            <section class="header__section-main-information">
+                <h4 class="header__subtitle">frontend developer</h4>
+
+                <h2 class="header__applicant-name">
+                    Afonin Mikhail
+                </h2>
+                <ul class="header__contacts-list">
+                    <li class="header__contacts-list-item">A: Russia, Moscow</li>
+                    <li class="header__contacts-list-item">M: +7.915.229.3281</li>
+                    <li class="header__contacts-list-item">T: @afoninmv</li>
+                </ul>
+            </section>
+        </section>
+
+        <div class="header__image-wrapper">
+            <img class="header__image" src="./img/applicant_photo.png" alt="Photo">
+        </div>
+
+    </header>
+    <main class="main">
+        <div class="main_left-container">
+            <section class="main__about-me">
+                <h2 class="main__section-title">about me</h2>
+                <p class="main__common-text-margin">
+                    For me programming is&nbsp;absolute freedom of&nbsp;creativity and self-expression, I&nbsp;like to
+                    solve
+                    non-trivial problems. I&nbsp;am currently improving native JS&nbsp;and&nbsp;ReactJS
+                    skills.
+                </p>
+            </section>
+            <section class="main__stack">
+                <h2 class="main__section-title">stack</h2>
+                <ul class="main__common-list">
+                    <li class="main__stack-list-item">HTML5</li>
+                    <li class="main__stack-list-item">CSS3</li>
+                    <li class="main__stack-list-item">Less</li>
+                    <li class="main__stack-list-item">Sass</li>
+                    <li class="main__stack-list-item">Styled-components</li>
+                    <li class="main__stack-list-item">JavaScript</li>
+                    <li class="main__stack-list-item">TypeScript</li>
+                    <li class="main__stack-list-item">React</li>
+                    <li class="main__stack-list-item">React-Hooks</li>
+                    <li class="main__stack-list-item">Redux</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="main__section-title">education</h2>
+                <p class="main__common-text-margin">2010 - Russian State University of&nbsp; Trade and&nbsp; Economics,
+                    Management
+                    Faculty</p>
+            </section>
+        </div>
+
+
+        <div class='main__right-container'>
+            <section>
+                <h2 class="main__section-title">Work Experience</h2>
+                <ul class="main__common-list">
+                    <li>May 2021 - Present: Frontend developer, iTeco</li>
+                    <li>Aug 2020 - May 2021: Frontend developer, StartUp</li>
+                    <li>Feb 2020 - Jul 2020: Frontend developer, Megafon</li>
+                    <li>Jan 2019 - Feb 2020: Frontend developer, Freelance</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="main__section-title">code example</h2>
+                <pre class="main__common-text-margin main__pre">
+const groupsAnagrams = (array) => {
+    const hashTable = {};
+    for (let str of array) {
+        const sortedStr = str.split('').sort().join('');
+        if (hashTable[sortedStr]) {
+            hashTable[sortedStr].push(str)
+        };
+        else hashTable[sortedStr] = [str];
+    }
+    return Object.values(hashTable);
+}
+</pre>
+            </section>
+
+            <section>
+                <h2 class="main__section-title">languages</h2>
+                <ul class="main__common-list">
+                    <li>English - Intermediate (B2)</li>
+                    <li>German - Beginner (A1)</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <a class="footer__rs-logo" href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="Course logo"></a>
+
+        <div>
+            <time>2021</time>
+            <a class="footer__github-link" href="https://github.com/mamboojamboo" target="_blank">
+                &copy;Mikhail Afonin
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
