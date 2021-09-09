@@ -21,9 +21,9 @@
                     Afonin Mikhail
                 </h1>
                 <ul class="header__contacts-list">
-                    <li class="header__contacts-list-item">Russia, Moscow</li>
-                    <li class="header__contacts-list-item">+7.915.229.3281</li>
-                    <li class="header__contacts-list-item">@afoninmv</li>
+                    <li class="header__contacts-list-item">A: Russia, Moscow</li>
+                    <li class="header__contacts-list-item">M: +7.915.229.3281</li>
+                    <li class="header__contacts-list-item">T: @afoninmv</li>
                 </ul>
             </section>
         </section>
@@ -34,68 +34,73 @@
 
     </header>
     <main class="main">
-        <section class="main__stack">
-            <h2 class="main__section-title">stack</h2>
-            <ul class="main__stack-list">
-                <li class="main__stack-list-item">HTML5</li>
-                <li class="main__stack-list-item">CSS3</li>
-                <li class="main__stack-list-item">Less</li>
-                <li class="main__stack-list-item">Sass</li>
-                <li class="main__stack-list-item">Styled-components</li>
-                <li class="main__stack-list-item">JavaScript</li>
-                <li class="main__stack-list-item">TypeScript</li>
-                <li class="main__stack-list-item">React</li>
-                <li class="main__stack-list-item">React-Hooks</li>
-                <li class="main__stack-list-item">Redux</li>
-            </ul>
+        <section class="main_left-side">
+            <section class="main__about-me">
+                <h2 class="main__section-title">about me</h2>
+                <span>for me the ability to program is absolute freedom of creativity, self-expression, I rest when I
+                    write code</span>
+            </section>
+            <section class="main__stack">
+                <h2 class="main__section-title">stack</h2>
+                <ul class="main__stack-list">
+                    <li class="main__stack-list-item">HTML5</li>
+                    <li class="main__stack-list-item">CSS3</li>
+                    <li class="main__stack-list-item">Less</li>
+                    <li class="main__stack-list-item">Sass</li>
+                    <li class="main__stack-list-item">Styled-components</li>
+                    <li class="main__stack-list-item">JavaScript</li>
+                    <li class="main__stack-list-item">TypeScript</li>
+                    <li class="main__stack-list-item">React</li>
+                    <li class="main__stack-list-item">React-Hooks</li>
+                    <li class="main__stack-list-item">Redux</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="main__section-title">education</h2>
+                <span>2010 - Russian State University of Trade and Economics / Management</span>
+            </section>
+
+
         </section>
-        <section>
-            <h2>Code Example</h2>
-            <pre>
-                <code>
-                    const getFirstUniqueChar = (string) => {
-                        const hashTable = {};
-                    
-                        for (let id = 0; id < string.length; id++) {
-                            !hashTable[string[id]]
-                                ? hashTable[string[id]] = 1
-                                : hashTable[string[id]]++;
-                        }
-                    
-                        for (let id = 0; id < string.length; id++) {
-                            const elem = string[id];
-                            if (hashTable[elem] === 1) return id;
-                        }
-                    
-                        return -1;
-                    };
-                </code>
-            </pre>
-        </section>
-        <section>
-            <h2>Work Experience</h2>
-            <ul>
-                <li>May 2021 - Current: Frontend developer, iTeco</li>
-                <li>Aug 2020 - May 2021: Frontend developer, StartUp</li>
-                <li>Feb 2020 - Jul 2020: Frontend developer, Megafon</li>
-                <li>Jan 2019 - Feb 2020: Frontend developer, Freelance</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <span>2010 - Russian State University of Trade and Economics / Management</span>
-        </section>
-        <section>
-            <h2>Languages</h2>
-            <ul>
-                <li>English - Intermediate (B2)</li>
-                <li>German - Beginner (A1)</li>
-            </ul>
+
+
+        <section class='main_right-side'>
+            <section>
+                <h2 class="main__section-title">Work Experience</h2>
+                <ul>
+                    <li>May 2021 - Present: Frontend developer, iTeco</li>
+                    <li>Aug 2020 - May 2021: Frontend developer, StartUp</li>
+                    <li>Feb 2020 - Jul 2020: Frontend developer, Megafon</li>
+                    <li>Jan 2019 - Feb 2020: Frontend developer, Freelance</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="main__section-title">code example</h2>
+                link1
+                link2
+                link3
+            </section>
+
+            <section>
+                <h2 class="main__section-title">languages</h2>
+                <ul>
+                    <li>English - Intermediate (B2)</li>
+                    <li>German - Beginner (A1)</li>
+                </ul>
+            </section>
         </section>
     </main>
-    <footer>
-        <span>&copy; Mikhail Afonin</span>
-        <time>2021</time>
+    <footer class="footer">
+        <a class="footer__rs-logo" href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="Course logo"></a>
+
+        <section class="footer__right-side">
+            <time>2021 &copy;</time>
+            <a class="footer__github-link" href="https://github.com/mamboojamboo" target="_blank">
+                Mikhail Afonin
+            </a>
+        </section>
     </footer>
 </body>
 

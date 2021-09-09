@@ -12,7 +12,7 @@ html {
 
 body {
     width: 50vw;
-    padding: 30px;
+    padding: 1.875rem;
     background-color: #f2f2f2;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .header__applicant-name {
-    font-size: 2.475rem;
+    font-size: 2.5rem;
 }
 
 .header__contacts-list {
@@ -55,7 +55,7 @@ body {
 
 .header__contacts-list-item {
     position: relative;
-    margin-right: 25px;
+    margin-right: 1.375rem;
 }
 
 .header__contacts-list-item::after {
@@ -91,7 +91,13 @@ body {
 }
 
 .main {
+    display: flex;
+    justify-content: space-between;
     margin-top: 30px;
+}
+
+.main_left-side {
+    width: 30%;
 }
 
 .main__stack {
@@ -100,8 +106,10 @@ body {
 }
 
 .main__section-title {
-    font-size: 32px;
+    padding: 0.5rem;
+    font-size: 1.125rem;
     text-transform: uppercase;
+    background-color: #e1e1e1;
 }
 
 .main__stack-list {
@@ -113,3 +121,29 @@ body {
 .main__stack-list-item {
 }
 
+.main_right-side {
+    width: 65%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    text-align: right;
+    background-color: #e1e1e1;
+}
+
+.footer__rs-logo {
+    width: 50px;
+}
+
+.footer__github-link {
+    text-decoration: none;
+    color: #343631;
+}
+
+.footer__github-link:hover {
+    color: #a7a7a7;
+}
